@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J. K. Logesh — Electrical &amp; Electronic Engineering Student</title>
+  <meta name="description"
+    content="Personal Portfolio & ATS Curriculum Vitae of J. K. Logesh, Electrical &amp; Electronics Engineering student at Nandha Engineering College, Erode. Specializing in Embedded Systems, IoT, Renewable Energy, and Power Electronics.">
+  <meta name="author" content="J. K. Logesh">
+
+  <!-- Google Fonts: Space Grotesk (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header>
+    <nav class="nav" aria-label="Main Navigation">
+      <a href="#home" class="logo">
+        <span class="logo-dot"></span>
+        <span>J. K. Logesh</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Theme">🌙</button>
+        <a href="#resume" class="btn btn-copper btn-sm" id="navCvBtn">📄 ATS Resume</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home <span>→</span></a>
+      <a href="#about">About <span>→</span></a>
+      <a href="#education">Education <span>→</span></a>
+      <a href="#skills">Skills <span>→</span></a>
+      <a href="#projects">Projects <span>→</span></a>
+      <a href="#activities">Activities <span>→</span></a>
+      <a href="#resume">Resume <span>→</span></a>
+      <a href="#contact">Contact <span>→</span></a>
+      <div style="padding: 12px 8px 4px;">
+        <a href="#resume" class="btn btn-copper" style="width: 100%; justify-content: center;">📄 View ATS Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Custom Electric Cursor Follower -->
+  <div id="electricCursor" class="electric-cursor"></div>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas" class="hero-canvas"></canvas>
+    <div class="wrap">
+      <div class="hero-content reveal" id="heroContent">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Circuit Trace Divider -->
+  <div class="trace-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24">
+      <line x1="0" y1="12" x2="560" y2="12" class="trace-line-solid" />
+      <circle cx="560" cy="12" r="3" class="trace-via" />
+      <line x1="560" y1="12" x2="600" y2="12" class="trace-line" />
+      <circle cx="600" cy="12" r="3" class="trace-via" />
+      <line x1="600" y1="12" x2="640" y2="12" class="trace-line" />
+      <circle cx="640" cy="12" r="3" class="trace-via" />
+      <line x1="640" y1="12" x2="1200" y2="12" class="trace-line-solid" />
+    </svg>
+  </div>
+
+  <!-- ================= ABOUT ME SECTION ================= -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head reveal-left">
+        <div class="eyebrow">BACKGROUND &amp; PASSION</div>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-sub">Electrical &amp; Electronics Engineering student with a strong hands-on prototyping
+          focus.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal stagger-1" id="aboutTextContainer">
+          <!-- Rendered dynamically from config.js verbatim -->
+        </div>
+
+        <div class="learning-card reveal stagger-2">
+          <h3>Currently Learning</h3>
+          <ul class="learning-list" id="currentlyLearningList">
+            <!-- Rendered dynamically -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Circuit Trace Divider -->
+  <div class="trace-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24">
+      <line x1="0" y1="12" x2="1200" y2="12" class="trace-line-solid" />
+      <circle cx="600" cy="12" r="3.5" class="trace-via" />
+    </svg>
+  </div>
+
+  <!-- ================= EDUCATION SECTION ================= -->
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head reveal-left">
+        <div class="eyebrow">ACADEMIC JOURNEY</div>
+        <h2 class="section-title">Education</h2>
+        <p class="section-sub">Institutional foundation in Electrical &amp; Electronic Engineering.</p>
+      </div>
+
+      <div class="timeline" id="educationContainer">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Circuit Trace Divider -->
+  <div class="trace-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24">
+      <line x1="0" y1="12" x2="1200" y2="12" class="trace-line-solid" />
+      <circle cx="300" cy="12" r="3" class="trace-via" />
+      <circle cx="900" cy="12" r="3" class="trace-via" />
+    </svg>
+  </div>
+
+  <!-- ================= TECHNICAL & SOFT SKILLS ================= -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal-left">
+        <div class="eyebrow">COMPETENCIES &amp; TOOLS</div>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-sub">Categorized by engineering domain and practical experience levels.</p>
+      </div>
+
+      <div class="skills-grid" id="technicalSkillsContainer">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div class="section-head reveal" style="margin-top: 64px; margin-bottom: 32px;">
+        <div class="eyebrow">INTERPERSONAL ATTRIBUTES</div>
+        <h2 class="section-title">Soft Skills</h2>
+      </div>
+
+      <div class="soft-grid" id="softSkillsContainer">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Circuit Trace Divider -->
+  <div class="trace-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24">
+      <line x1="0" y1="12" x2="1200" y2="12" class="trace-line-solid" />
+      <circle cx="600" cy="12" r="3.5" class="trace-via" />
+    </svg>
+  </div>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head reveal-left">
+        <div class="eyebrow">HANDS-ON ENGINEERING</div>
+        <h2 class="section-title">Featured Project</h2>
+        <p class="section-sub">Priority-based renewable power management architecture.</p>
+      </div>
+
+      <div id="featuredProjectContainer">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Additional Hardware & Web Projects Grid -->
+      <div class="section-head reveal-left" style="margin-top: 64px; margin-bottom: 28px;">
+        <div class="eyebrow">HARDWARE &amp; SOFTWARE SOLUTIONS</div>
+        <h2 class="section-title">Additional Engineering &amp; Web Projects</h2>
+        <p class="section-sub">Embedded systems prototypes, safety monitoring circuits, and web application solutions.</p>
+      </div>
+
+      <div class="projects-grid" id="otherProjectsContainer" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Student Project Assistance & Custom Orders Banner -->
+      <div id="projectOrderBannerContainer" style="margin-top: 56px;">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Circuit Trace Divider -->
+  <div class="trace-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24">
+      <line x1="0" y1="12" x2="1200" y2="12" class="trace-line-solid" />
+      <circle cx="400" cy="12" r="3" class="trace-via" />
+      <circle cx="800" cy="12" r="3" class="trace-via" />
+    </svg>
+  </div>
+
+  <!-- ================= TECHNICAL ACTIVITIES & CERTIFICATIONS ================= -->
+  <section id="activities">
+    <div class="wrap">
+      <div class="section-head reveal-left">
+        <div class="eyebrow">CO-CURRICULAR PARTICIPATION</div>
+        <h2 class="section-title">Technical Activities &amp; Participation</h2>
+      </div>
+
+      <div class="entries-grid" id="activitiesContainer">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div class="section-head reveal" style="margin-top: 64px; margin-bottom: 28px;">
+        <div class="eyebrow">CREDENTIALS &amp; RECOGNITION</div>
+        <h2 class="section-title">Certifications &amp; Achievements</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div>
+          <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--accent-ink);">Certifications</h3>
+          <div id="certificationsContainer" style="display: flex; flex-direction: column; gap: 16px;">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--accent-ink);">Achievements</h3>
+          <div id="achievementsContainer" style="display: flex; flex-direction: column; gap: 16px;">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Circuit Trace Divider -->
+  <div class="trace-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24">
+      <line x1="0" y1="12" x2="1200" y2="12" class="trace-line-solid" />
+      <circle cx="600" cy="12" r="3.5" class="trace-via" />
+    </svg>
+  </div>
+
+  <!-- ================= EMBEDDED ATS RESUME SECTION ================= -->
+  <section id="resume">
+    <div class="wrap">
+      <div class="section-head reveal-left" style="text-align: center; margin-bottom: 32px;">
+        <div class="eyebrow" style="justify-content: center;">OFFICIAL DOCUMENT</div>
+        <h2 class="section-title">ATS-Friendly Professional Resume</h2>
+        <p class="section-sub" style="margin: 8px auto 0;">Formatted specifically for ATS (Applicant Tracking Systems), recruiters, and college placement drives.</p>
+        
+        <div style="display: flex; gap: 12px; justify-content: center; margin-top: 20px; flex-wrap: wrap;">
+          <button class="btn btn-copper btn-sm js-print-cv">🖨️ Print / Save as ATS PDF</button>
+          <button class="btn btn-outline btn-sm js-export-docx">📄 Download .DOCX</button>
+        </div>
+      </div>
+
+      <div class="resume-card-container reveal-up" style="max-width: 900px; margin: 0 auto; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border-radius: 8px; overflow: hidden;">
+        <div id="embeddedResumeDoc">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CAREER GOALS SECTION ================= -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal-left">
+        <div class="eyebrow">FUTURE VISION</div>
+        <h2 class="section-title">Career Goals</h2>
+      </div>
+
+      <div class="career-grid" id="careerGoalsContainer">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section id="contact">
+    <div class="wrap" id="contactContainer">
+      <!-- Rendered dynamically -->
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="wrap" id="footerContent">
+      <!-- Rendered dynamically -->
+    </div>
+  </footer>
+
+  <!-- Centralized Config Data Script -->
+  <script src="js/config.js"></script>
+  <!-- Hero PCB & Priority Simulator -->
+  <script src="js/pcb-simulation.js"></script>
+  <!-- Scroll Reveal & Theme Engine -->
+  <script src="js/animations.js"></script>
+  <!-- ATS Resume Generator & Exporter -->
+  <script src="js/cv-generator.js"></script>
+  <!-- Main Application Script -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
