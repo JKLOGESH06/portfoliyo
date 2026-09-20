@@ -452,27 +452,19 @@
               </ul>
             </div>
           `).join('')}
-
-          <div style="margin-top: 6pt; padding: 5pt 8pt; border: 1.5px solid #C8752F; border-radius: 4px; background: #FFF8F2; font-size: 8.5pt;">
-            <strong>🔥 Student &amp; Custom Project Development:</strong> I build hardware, embedded microcontroller, and web projects for students! Place project orders online at: <a href="https://creators-in.vercel.app/" target="_blank" rel="noopener" style="color: #0E3B2E; font-weight: bold; text-decoration: underline;">https://creators-in.vercel.app/</a>
-          </div>
         </div>
 
-        <!-- INTERNSHIP / EXPERIENCE -->
+        <!-- INDUSTRIAL VISIT / FIELD VISIT -->
         <div class="r-section">
-          <div class="r-section-title">Internship / Experience</div>
+          <div class="r-section-title">INDUSTRIAL VISIT / FIELD VISIT</div>
           <div class="r-entry">
             <div class="r-entry-header">
-              <span class="r-entry-left">${exp ? exp.role : '[Add Role / Position Title]'}</span>
-              <span class="r-entry-right" style="font-style:italic;font-weight:normal;">${exp ? exp.duration : '[Add Duration / Dates]'}</span>
+              <span class="r-entry-left">Coral Coil India Private Limited, Erode</span>
+              <span class="r-entry-right" style="font-style:italic;font-weight:normal;">Field Visit</span>
             </div>
-            <div class="r-entry-sub">${exp ? exp.organization : '[Add Organization Name]'}</div>
             <ul class="r-list">
-              ${exp && exp.bullets
-                ? exp.bullets.map(b => `<li>${b}</li>`).join('')
-                : `<li>[Add key responsibility or action verb bullet point]</li>
-                   <li>[Add technical or professional skill gained during experience]</li>`
-              }
+              <li>Observed the manufacturing process of wind-turbine generators, including stator and rotor assembly.</li>
+              <li>Gained practical exposure to industrial operations, quality testing and real-time production systems.</li>
             </ul>
           </div>
         </div>
@@ -535,10 +527,10 @@
         '• Technical Implementation: Integrated Embedded C microcontroller control, charge controllers, relay switching networks, and real-time battery/grid telemetry for safe, automated power source selection.',
         '• Technology Readiness Level (TRL): Formulated and validated TRL 2-3 proof-of-concept model for low-cost, scalable rural hybrid energy deployment.',
         '',
-        'INTERNSHIP / EXPERIENCE',
-        `${exp ? exp.role : '[Add Role / Position Title]'} | ${exp ? exp.duration : '[Add Duration / Dates]'}`,
-        exp ? exp.organization : '[Add Organization Name]',
-        ...(exp && exp.bullets ? exp.bullets.map(b => `• ${b}`) : ['• [Add key responsibility or action verb bullet point]', '• [Add technical or professional skill gained during experience]']),
+        'INDUSTRIAL VISIT / FIELD VISIT',
+        'Coral Coil India Private Limited, Erode | Field Visit',
+        '• Observed the manufacturing process of wind-turbine generators, including stator and rotor assembly.',
+        '• Gained practical exposure to industrial operations, quality testing and real-time production systems.',
         '',
         'CERTIFICATIONS',
         ...d.certifications.map(c => `• ${c.title} — ${c.organization}`),

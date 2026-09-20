@@ -114,26 +114,19 @@ class CVGenerator {
               </ul>
             </div>
           `).join('')}
-
-          <div style="margin-top: 5pt; padding: 4pt 6pt; border: 1pt solid #C8752F; border-radius: 3px; background: #FFF8F2; font-size: 8pt;">
-            <strong>🔥 Student &amp; Custom Project Development:</strong> I build hardware, embedded microcontroller, and web projects for students! Order online at: <a href="https://creators-in.vercel.app/" target="_blank" rel="noopener" style="color: #0E3B2E; font-weight: bold; text-decoration: underline;">https://creators-in.vercel.app/</a>
-          </div>
         </section>
 
-        <!-- INTERNSHIP / EXPERIENCE -->
+        <!-- INDUSTRIAL VISIT / FIELD VISIT -->
         <section class="ats-section">
-          <div class="ats-section-title">INTERNSHIP / EXPERIENCE</div>
+          <div class="ats-section-title">INDUSTRIAL VISIT / FIELD VISIT</div>
           <div class="ats-entry">
             <div class="ats-entry-header">
-              <span><strong>${exp ? exp.role : '[Add Role / Position Title]'}</strong></span>
-              <span class="ats-right" style="font-style: italic; font-weight: normal;">${exp ? exp.duration : '[Add Duration / Dates]'}</span>
+              <span><strong>Coral Coil India Private Limited, Erode</strong></span>
+              <span class="ats-right" style="font-style: italic; font-weight: normal;">Field Visit</span>
             </div>
-            <div class="ats-entry-sub">${exp ? exp.organization : '[Add Organization Name]'}</div>
             <ul class="ats-bullet-list">
-              ${exp && exp.bullets ? exp.bullets.map(b => `<li>${b}</li>`).join('') : `
-                <li>[Add key responsibility or action verb bullet point]</li>
-                <li>[Add technical or professional skill gained during experience]</li>
-              `}
+              <li>Observed the manufacturing process of wind-turbine generators, including stator and rotor assembly.</li>
+              <li>Gained practical exposure to industrial operations, quality testing and real-time production systems.</li>
             </ul>
           </div>
         </section>
@@ -253,11 +246,11 @@ class CVGenerator {
           <li><span class="bold">Technology Readiness Level (TRL):</span> Formulated and validated TRL 2–3 proof-of-concept model for low-cost, scalable rural hybrid energy deployment.</li>
         </ul>
 
-        <h2>Internship / Experience</h2>
-        <p><span class="bold">${exp ? exp.role : '[Add Role / Position Title]'}</span><span style="float:right;font-weight:normal">${exp ? exp.duration : '[Add Duration / Dates]'}</span></p>
-        <p style="clear:both"><span class="bold">${exp ? exp.organization : '[Add Organization Name]'}</span></p>
+        <h2>Industrial Visit / Field Visit</h2>
+        <p><span class="bold">Coral Coil India Private Limited, Erode</span><span style="float:right;font-weight:normal;font-style:italic;">Field Visit</span></p>
         <ul>
-          ${exp && exp.bullets ? exp.bullets.map(b => `<li>${b}</li>`).join('') : '<li>[Add key responsibility or action verb bullet point]</li><li>[Add technical or professional skill gained during experience]</li>'}
+          <li>Observed the manufacturing process of wind-turbine generators, including stator and rotor assembly.</li>
+          <li>Gained practical exposure to industrial operations, quality testing and real-time production systems.</li>
         </ul>
 
         <h2>Certifications</h2>

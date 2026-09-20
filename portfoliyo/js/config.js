@@ -51,14 +51,25 @@ window.PORTFOLIO_DATA = {
     }
   ],
 
+  industrialVisit: [
+    {
+      company: "Coral Coil India Private Limited, Erode",
+      type: "Field Visit",
+      bullets: [
+        "Observed the manufacturing process of wind-turbine generators, including stator and rotor assembly.",
+        "Gained practical exposure to industrial operations, quality testing and real-time production systems."
+      ]
+    }
+  ],
+
   experience: [
     {
-      role: "[Add Role / Position Title]",
-      duration: "[Add Duration / Dates]",
-      organization: "[Add Organization Name]",
+      role: "Industrial Visit / Field Visit",
+      duration: "Field Visit",
+      organization: "Coral Coil India Private Limited, Erode",
       bullets: [
-        "[Add key responsibility or action verb bullet point]",
-        "[Add technical or professional skill gained during experience]"
+        "Observed the manufacturing process of wind-turbine generators, including stator and rotor assembly.",
+        "Gained practical exposure to industrial operations, quality testing and real-time production systems."
       ]
     }
   ],
