@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderOtherProjects(data.otherProjects);
   renderStudentProjectsBanner(data.studentProjectsBanner);
   renderActivities(data.activities);
+  renderIndustrialVisit(data.industrialVisit);
   renderCertifications(data.certifications);
   renderAchievements(data.achievements);
   renderEmbeddedResume();
@@ -311,6 +312,23 @@ function renderActivities(activities) {
       <div class="entry-meta">📍 ${act.organization} • <span class="chip" style="font-size: 11px;">${act.date}</span></div>
       <p>${act.description}</p>
       <div style="margin-top: 10px; font-size: 13px; color: var(--muted);"><strong>Role:</strong> ${act.role}</div>
+    </div>
+  `).join('');
+}
+
+function renderIndustrialVisit(visits) {
+  const container = document.getElementById('industrialVisitContainer');
+  if (!container || !visits) return;
+
+  container.innerHTML = visits.map((iv, idx) => `
+    <div class="entry-card reveal-left stagger-${(idx % 2) + 1}">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px;">
+        <h4 style="font-size: 17px; margin-bottom: 4px;">🏭 ${iv.company}</h4>
+        <span class="chip" style="font-size: 11.5px; background: rgba(200, 117, 47, 0.15); color: var(--accent); font-weight: 600;">${iv.type}</span>
+      </div>
+      <ul style="margin-top: 12px; padding-left: 18px; color: var(--muted); font-size: 14.5px; line-height: 1.6;">
+        ${iv.bullets.map(bullet => `<li style="margin-bottom: 6px;">${bullet}</li>`).join('')}
+      </ul>
     </div>
   `).join('');
 }

@@ -30,12 +30,12 @@ window.PORTFOLIO_DATA = {
 
   about: {
     paragraph1: "I am an Electrical & Electronics Engineering student at Nandha Engineering College, Erode, passionate about embedded systems, IoT, renewable energy, and power electronics. I enjoy transforming engineering concepts into practical solutions through hands-on projects.",
-    paragraph2: "Through my academic journey, I have gained hands-on practical exposure working with microcontrollers such as Arduino and ESP32, programming in C and Java, circuit simulation in MATLAB / Simulink, Keil uVision, and Proteus, as well as designing 5-tier power-source prioritization systems for renewable energy applications.",
+    paragraph2: "Through my academic journey, I have gained hands-on practical exposure working with microcontrollers such as Arduino and ESP32, programming in C and Java, circuit simulation and PCB design in MATLAB / Simulink, Keil uVision, Proteus, and KiCad, as well as designing 5-tier power-source prioritization systems for renewable energy applications.",
     currentlyLearning: [
       "Embedded Systems Architecture (Arduino & ESP32)",
       "PLC & Industrial Automation",
       "Renewable Energy Power Management",
-      "Circuit Simulation (MATLAB/Simulink & Proteus)",
+      "Circuit Simulation & PCB Design (MATLAB/Simulink, Proteus & KiCad)",
       "Software Tools & Microcontroller Programming"
     ]
   },
@@ -51,14 +51,25 @@ window.PORTFOLIO_DATA = {
     }
   ],
 
+  industrialVisit: [
+    {
+      company: "Coral Coil India Private Limited, Erode",
+      type: "Field Visit",
+      bullets: [
+        "Observed the manufacturing process of wind-turbine generators, including stator and rotor assembly.",
+        "Gained practical exposure to industrial operations, quality testing and real-time production systems."
+      ]
+    }
+  ],
+
   experience: [
     {
-      role: "[Add Role / Position Title]",
-      duration: "[Add Duration / Dates]",
-      organization: "[Add Organization Name]",
+      role: "Industrial Visit / Field Visit",
+      duration: "Field Visit",
+      organization: "Coral Coil India Private Limited, Erode",
       bullets: [
-        "[Add key responsibility or action verb bullet point]",
-        "[Add technical or professional skill gained during experience]"
+        "Observed the manufacturing process of wind-turbine generators, including stator and rotor assembly.",
+        "Gained practical exposure to industrial operations, quality testing and real-time production systems."
       ]
     }
   ],
@@ -82,7 +93,7 @@ window.PORTFOLIO_DATA = {
     {
       category: "Software & Tools",
       icon: "terminal",
-      skills: ["MATLAB / Simulink", "Keil uVision", "Proteus"]
+      skills: ["MATLAB / Simulink", "Keil uVision", "Proteus", "KiCad"]
     }
   ],
 
@@ -228,7 +239,7 @@ window.PORTFOLIO_DATA = {
     }
   },
 
-  summaryForCV: "Electrical & Electronics Engineering student at Nandha Engineering College with strong expertise in Programming (C, Java), Embedded Systems (Arduino, ESP32), Electronics Core (Circuit Simulation, Digital Logic, Sensors & Interfacing), and Software Tools (MATLAB / Simulink, Keil uVision, Proteus). Developer of the Smart Solar Priority Power Management System with a 5-tier priority switching algorithm aligned with SDG 7 & SDG 13. Certified through NPTEL / SWAYAM (IIT & IISc), 1st Prize Winner in Green Energy, 3rd Prize Winner at P.A. College of Engineering Project Expo, and trained in PLC & Industrial Automation.",
+  summaryForCV: "Electrical & Electronics Engineering student at Nandha Engineering College with strong expertise in Programming (C, Java), Embedded Systems (Arduino, ESP32), Electronics Core (Circuit Simulation, Digital Logic, Sensors & Interfacing), and Software Tools (MATLAB / Simulink, Keil uVision, Proteus, KiCad). Developer of the Smart Solar Priority Power Management System with a 5-tier priority switching algorithm aligned with SDG 7 & SDG 13. Certified through NPTEL / SWAYAM (IIT & IISc), 1st Prize Winner in Green Energy, 3rd Prize Winner at P.A. College of Engineering Project Expo, and trained in PLC & Industrial Automation.",
 
   careerObjectiveForCV: "To begin my professional career in Electrical & Electronics Engineering, leveraging my technical proficiency in C, Java, embedded microcontrollers, circuit simulation, and renewable power management systems to deliver innovative hardware and control solutions."
 };
