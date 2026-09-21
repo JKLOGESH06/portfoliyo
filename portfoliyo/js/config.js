@@ -45,7 +45,7 @@ window.PORTFOLIO_DATA = {
       degree: "Electrical and Electronics Engineering",
       institution: "Nandha Engineering College",
       location: "Erode, Tamil Nadu, India",
-      duration: "Year of Study: 3rd Year | Expected: 2026",
+      duration: "Year of Study: 3rd Year | Expected: 2028",
       cgpa: "7.5 CGPA",
       coursework: "Embedded Systems, Power Electronics, Circuit Simulation, Digital Logic, Sensors & Interfacing, Renewable Energy Systems, Industrial Automation (PLC)"
     }

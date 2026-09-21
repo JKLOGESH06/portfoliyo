@@ -70,7 +70,7 @@ class CVGenerator {
           <div class="ats-entry">
             <div class="ats-entry-header">
               <span>Electrical and Electronics Engineering</span>
-              <span class="ats-right">Year of Study: 3rd Year | Expected: 2026</span>
+              <span class="ats-right">Year of Study: 3rd Year | Expected: 2028</span>
             </div>
             <div class="ats-entry-sub">${edu.institution}</div>
             <div class="ats-subtext">Academic Standing: ${edu.cgpa}</div>
