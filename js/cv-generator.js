@@ -245,6 +245,12 @@ class CVGenerator {
           <li><span class="bold">Technical Implementation:</span> Integrated Embedded C microcontroller control, charge controllers, relay switching networks, and real-time battery/grid telemetry for safe, automated power source selection.</li>
           <li><span class="bold">Technology Readiness Level (TRL):</span> Formulated and validated TRL 2–3 proof-of-concept model for low-cost, scalable rural hybrid energy deployment.</li>
         </ul>
+        ${(this.data.otherProjects || []).map(p => `
+          <p><span class="bold">${p.title}</span> — <em>${p.category}</em></p>
+          <ul>
+            <li>${p.problem} <span class="bold">Technologies:</span> ${p.technologies.join(', ')}.</li>
+          </ul>
+        `).join('')}
 
         <h2>Industrial Visit / Field Visit</h2>
         <p><span class="bold">Coral Coil India Private Limited, Erode</span><span style="float:right;font-weight:normal;font-style:italic;">Field Visit</span></p>

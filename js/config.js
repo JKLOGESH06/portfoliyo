@@ -179,9 +179,15 @@ window.PORTFOLIO_DATA = {
       id: "web-development-solutions",
       title: "Web Development & Custom Website Solutions",
       category: "Full-Stack Web Development",
-      problem: "Designed and developed modern responsive websites, portfolio applications, and custom web tools for academic and client project requirements.",
-      technologies: ["HTML5", "CSS3", "JavaScript (ES6+)", "UI/UX Design", "Vercel Deployment"],
-      outcome: "Created high-performance, responsive web interfaces with custom dynamic interactivity."
+      problem: "Designed and developed modern responsive websites, project platforms, admin portals, and IoT dashboards including creators-in, creator-in-admin, portfoliyo, and iot-dashboard.",
+      technologies: ["HTML5", "CSS3", "JavaScript (ES6+)", "Kotlin", "UI/UX Design", "Vercel Deployment"],
+      webProjects: [
+        { name: "creators-in", description: "Academic Project Platform", lang: "JavaScript", link: "https://creators-in.vercel.app/" },
+        { name: "creator-in-admin", description: "Admin Management Portal", lang: "JavaScript", link: "https://github.com/JKLOGESH06/creator-in-admin" },
+        { name: "portfoliyo", description: "Personal Portfolio & ATS Resume App", lang: "JavaScript", link: "https://github.com/JKLOGESH06/portfoliyo" },
+        { name: "iot-dashboard", description: "Real-Time IoT Telemetry Dashboard", lang: "Kotlin", link: "https://github.com/JKLOGESH06/iot-dashboard" }
+      ],
+      outcome: "Successfully created and deployed full-stack web applications (creators-in, creator-in-admin, portfoliyo, iot-dashboard) with dynamic interactive features."
     }
   ],
 

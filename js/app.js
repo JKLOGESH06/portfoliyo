@@ -288,6 +288,13 @@ function renderOtherProjects(projects) {
         <span class="proj-badge">${proj.category}</span>
         <h4>${proj.title}</h4>
         <p>${proj.problem.length > 90 ? proj.problem.substring(0, 90) + '...' : proj.problem}</p>
+        ${proj.webProjects ? `
+          <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px;">
+            ${proj.webProjects.map(wp => `
+              <span class="chip" style="font-size: 11px; padding: 3px 8px; background: rgba(14, 59, 46, 0.08); color: var(--accent-ink); border: 1px solid var(--line); font-weight: 600;">🌐 ${wp.name}</span>
+            `).join('')}
+          </div>
+        ` : ''}
       </div>
       <div class="proj-spec-list">
         <div><span>Tech:</span> ${proj.technologies.join(', ')}</div>
@@ -515,6 +522,24 @@ function showProjectModal(proj) {
           <div style="margin-bottom: 20px;">
             <h4 style="font-size: 15px; margin-bottom: 6px;">Project Objective:</h4>
             <p style="font-size: 14.5px;">${proj.objective}</p>
+          </div>
+        ` : ''}
+
+        ${proj.webProjects ? `
+          <div style="margin-bottom: 20px;">
+            <h4 style="font-size: 15px; margin-bottom: 10px;">Featured Web Applications & Repositories:</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;">
+              ${proj.webProjects.map(wp => `
+                <div style="background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 12px;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                    <strong style="font-size: 14px; color: var(--accent-ink);">🌐 ${wp.name}</strong>
+                    <span class="chip" style="font-size: 10px; padding: 1px 6px;">${wp.lang}</span>
+                  </div>
+                  <div style="font-size: 12.5px; color: var(--muted); margin-bottom: 8px;">${wp.description}</div>
+                  ${wp.link && wp.link !== '#' ? `<a href="${wp.link}" target="_blank" rel="noopener" style="font-size: 12px; color: var(--accent); font-weight: 600; text-decoration: none;">View Project / Code &rarr;</a>` : ''}
+                </div>
+              `).join('')}
+            </div>
           </div>
         ` : ''}
 
